@@ -1,0 +1,16 @@
+import pkgutil
+import sys
+
+class BaseElement(object):
+    avatar = None
+    parent_web_element = None
+    web_element = None
+
+    def __init__(self, web_element=None, avatar=None, parent_web_element=None):
+        self.web_element = web_element
+        self.avatar = avatar
+        self.parent_web_element = parent_web_element
+
+    def meth(self): pass
+
+
